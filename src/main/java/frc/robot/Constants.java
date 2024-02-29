@@ -19,7 +19,9 @@ public final class Constants {
         //public static final int pigeonID = 1; // GYRO
 
         public static final COTSTalonFXSwerveConstants chosenModule = 
-        COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L3);
+        COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L1);
+        /*public static final COTSTalonFXSwerveConstants chosenModule = 
+        COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L3);*/
 
         /* Drivetrain Constants */
         public static final double trackWidth = Units.inchesToMeters(22.75); 
@@ -113,7 +115,7 @@ public final class Constants {
             public static final int driveMotorID = 6;
             public static final int angleMotorID = 5;
             public static final int canCoderID = 15;
-            public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-101.601563);
+            public static final Rotation2d angleOffset = Rotation2d.fromDegrees(258.398437); // equivalent negative value -101.601563
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
@@ -123,7 +125,7 @@ public final class Constants {
             public static final int driveMotorID = 8;
             public static final int angleMotorID = 7;
             public static final int canCoderID = 17;
-            public static final Rotation2d angleOffset = Rotation2d.fromDegrees(-12.568359);
+            public static final Rotation2d angleOffset = Rotation2d.fromDegrees(347.431641); // equivalent negative value -12.568359
             public static final SwerveModuleConstants constants = 
                 new SwerveModuleConstants(driveMotorID, angleMotorID, canCoderID, angleOffset);
         }
